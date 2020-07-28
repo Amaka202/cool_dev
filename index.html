@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,600&family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Speaking toddler</title>
+</head>
+<body>
+   <main>
+       <!-- nav bar -->
+       <nav>
+           <img src="./img/The speaking toddler.png" alt="">
+           <ul>
+               <li>Home</li>
+               <li>Features</li>
+               <li>Features</li>
+               <li>Features</li>
+           </ul>
+       </nav>
+
+       <!-- hero landing -->
+       <div id="myslider">
+        <div class="slide1">
+          <p class="main-topic">Baby Cry <span style="color: rgba(235, 216, 14, 0.788);">translated</span> to plain english</p>
+          <div class="timer">
+              <ul class="num">
+                <li class="days" id="days">24</li>
+                <li class="hours" id="hours">23</li>
+                <li class="minuites" id="minuites">14</li>
+                <li class="seconds" id="seconds">56</li>
+              </ul>
+              <ul class="wordings">
+                <li>Days</li>
+                <li>Hours</li>
+                <li>Minuites</li>
+                <li>Seconds</li>
+              </ul>
+          </div>
+        </div>
+        <div class="slide2">
+            <p class="main-topic">Baby Cry <span style="color: rgba(235, 216, 14, 0.788);">translated</span> to plain english</p>
+            <div class="timer">
+                <ul class="num">
+                  <li class="days" id="days">24</li>
+                  <li class="hours" id="hours">23</li>
+                  <li class="minuites" id="minuites">14</li>
+                  <li class="seconds" id="seconds">56</li>
+                </ul>
+                <ul class="wordings">
+                  <li>Days</li>
+                  <li>Hours</li>
+                  <li>Minuites</li>
+                  <li>Seconds</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide3">
+            <p class="main-topic">Baby Cry <span style="color: rgba(235, 216, 14, 0.788);">translated</span> to plain english</p>
+            <div class="timer">
+                <ul class="num">
+                  <li class="days" id="days">24</li>
+                  <li class="hours" id="hours">23</li>
+                  <li class="minuites" id="minuites">14</li>
+                  <li class="seconds" id="seconds">56</li>
+                </ul>
+                <ul class="wordings">
+                  <li>Days</li>
+                  <li>Hours</li>
+                  <li>Minuites</li>
+                  <li>Seconds</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    
+    <!-- about app -->
+    <div class="about-app">
+        <div class="about-writeup">
+            <p class="about-topic"> About the app</p>
+            <p class="about-para">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis magnam odit ducimus quos debitis ut odio architecto eius ratione perferendis cumque id, aliquam sint asperiores aspernatur, quis suscipit laboriosam eaque?"</p>
+        </div>
+        <div class="about-img">
+            <img name="slide" >
+        </div>
+    </div>
+
+
+    <!-- features -->
+    <div>
+      <h1>app features</h1>
+    </div>
+   </main> 
+
+
+   <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+   <script src="script.js"></script>
+   <script>
+     simpleslider.getSlider({
+       container: document.getElementById('myslider')
+     });
+     var i = 0; // Start point
+	var images = [];
+	var time = 1000;
+
+	// Image List
+	images[0] = 'img/full image 2.png';
+	images[1] = 'img/full image.png';
+	images[2] = 'img/full image.png';
+	images[3] = 'img/Group 106.png';
+
+	// Change Image
+	function changeImg(){
+		document.slide.src = images[i];
+
+		if(i < images.length - 1){
+			i++;
+		} else {
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+
+	window.onload = changeImg;
+   </script> 
+</body>
+</html>

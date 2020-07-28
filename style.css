@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+}
+
+nav{
+    height: 91px;
+    padding: 1rem 3rem;
+}
+
+nav img{
+    float: left;
+    margin-right: 25rem;
+}
+
+
+nav ul li{
+    list-style: none;
+    float: left;
+    margin-left: 3rem;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #4A6594;
+}
+
+/* carousel */
+#myslider { 
+    width: 100%; 
+    height:100vh;
+    align-items: center;
+    margin-top: -1rem;
+
+}
+#myslider div { width:100%; height:612px;  padding:30px; }
+
+.slide1{
+    background-image: url(./img/full\ image\ 2.png);
+    
+    background-size: cover;
+    background-color: #4A6594;
+}
+
+.slide2{
+    background-image: url(./img/full\ image.png);
+    background-size: cover;
+    background-color: #4A6594;
+}
+
+.slide3{
+    background-image: url(./img/Group\ 106.png);
+    background-size: cover;
+    background-color: #4A6594;
+}
+
+#myslider p{
+    font-family: 'Mulish', sans-serif;
+    width: 60%;
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#myslider .main-topic{
+    font-size: 3.5rem;
+}
+
+#myslider .timer{
+    text-align: center;
+}
+
+#myslider .timer ul li{
+    color: white;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#myslider .timer .num li{
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 3rem;
+}
+
+#myslider .timer .wordings li{
+    margin: 2rem;
+    margin-top: -0.8rem;
+}
+
+.about-app{
+    margin-top: -22px;
+}
+
+.about-writeup{
+    padding: 5rem;
+
+    height: 600px;
+    width: 900px;
+    background: #F7F2BC;
+}
+
+.about-topic{
+
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-fill-color: #F7F2BC;
+  -webkit-text-stroke-color: #4A6594;
+  -webkit-text-stroke-width: 2px;
+}
+
+.about-para{
+    width: 60%;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-img{
+   float: right;
+   margin-top: -30rem;
+}
+
+.about-img img{
+    height: 640px;
+    width: 720px;
+    object-fit: cover;
+}
+
+/* features */
+.features{
+    clear: both;
+}
+
